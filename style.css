@@ -1,0 +1,73 @@
+body{
+    overflow: hidden;
+}
+
+.fade-red{
+    animation: fadeRed 1s infinite;
+}
+
+@keyframes fadeRed{
+    0%{
+        background: #ff1f1f;
+        color: #54beff;
+    }
+    50%{
+        background: #fc6868;
+        color: #366cff;
+    }
+    100%{
+        background: #ff1f1f;
+        color: #54beff;
+    }
+}
+
+.fade-blue{
+    animation: fadeBlue 1s infinite;
+}
+
+@keyframes fadeBlue{
+    0%{
+        background: #54beff;
+        color: #ff1f1f;
+    }
+    50%{
+        background: #366cff;
+        color: #fc6868;
+    }
+    100%{
+        background: #54beff;
+        color: #ff1f1f;
+    }
+}
+
+#blue-div{
+    display: none;
+    background: url("https://t4.ftcdn.net/jpg/02/40/63/55/360_F_240635575_EJifwRAbKsVTDnA3QE0bCsWG5TLhUNEZ.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+
+#red-div{
+    display: none;
+    background: url("https://media.istockphoto.com/id/1267149438/vector/abstract-red-vector-background-with-stripes.jpg?s=612x612&w=0&k=20&c=4iykLC6veWQ4hU4D9dto5abOfvVEsULtv1eqzUFgD4Q=");
+    width: 100vw;
+    height: 100vw;
+    background-size: cover;
+}
+
+#q-div{
+    display: none;
+}
+
+#fail-div{
+    display: none;
+}
+
+#win-div{
+    display: none;
+}
+
+#win-div > center > div{
+    height: 16.5vh;
+}
